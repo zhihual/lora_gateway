@@ -32,6 +32,6 @@ $(OBJDIR)/%.o: src/%.c $(INCLUDES) | $(OBJDIR)
 ### Main program assembly
 
 util_spectral_scan: $(OBJDIR)/util_spectral_scan.o $(OBJDIR)/loragw_fpga_reg.o $(OBJDIR)/loragw_fpga_spi.o $(OBJDIR)/loragw_fpga_aux.o
-	$(CC) $^ -lrt -o $@
+	$(CC) $^ -lrt -lm -lpthread -ldl -o $@
 
 ### EOF

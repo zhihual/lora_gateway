@@ -1,7 +1,7 @@
 ### Environment constants 
 
-ARCH ?=
-CROSS_COMPILE ?=
+ARCH ?= 
+CROSS_COMPILE ?= mips-openwrt-linux-
 export
 
 ### general build targets

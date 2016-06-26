@@ -32,7 +32,7 @@ LGW_INC += $(LGW_PATH)/inc/loragw_aux.h
 
 ### Linking options
 
-LIBS := -lloragw -lrt
+LIBS := -lloragw -lrt -lm -lpthread -ldl
 
 ### General build targets
 
