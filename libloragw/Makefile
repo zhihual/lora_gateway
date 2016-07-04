@@ -6,7 +6,7 @@ include library.cfg
 ### constant symbols
 
 ARCH ?=
-CROSS_COMPILE ?=
+CROSS_COMPILE ?= mips-openwrt-linux-
 CC := $(CROSS_COMPILE)gcc
 AR := $(CROSS_COMPILE)ar
 
